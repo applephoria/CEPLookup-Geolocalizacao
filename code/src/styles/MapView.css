@@ -1,0 +1,49 @@
+.map-inner-container {
+  width: 100%;
+  height: 100%;
+  background: #f8fafc;
+}
+
+.leaflet-container {
+  background: #f8fafc !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-tile-pane {
+  filter: none !important; /* Mapa 100% claro sempre */
+}
+
+/* O ALFINETE DE RADAR PULSANTE VERDE (Do ideias/index.html) */
+.custom-radar-marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker-pulse {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent-green-glow);
+  border: 1.5px solid var(--accent-green);
+  animation: pulseMarker 2s ease-out infinite;
+}
+
+@keyframes pulseMarker {
+  0% { transform: scale(0.3); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+.marker-core {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3.5px solid var(--accent-green);
+  box-shadow: 0 0 14px var(--accent-green);
+  z-index: 3;
+}

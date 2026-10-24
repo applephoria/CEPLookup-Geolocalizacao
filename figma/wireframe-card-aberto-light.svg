@@ -1,0 +1,170 @@
+<svg width="1030" height="600" viewBox="0 0 1030 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .label-txt { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Canvas Ground Light -->
+  <rect width="1030" height="600" fill="#F4F6F8" />
+
+  <!-- Wireframe Label -->
+  <text x="50" y="34" fill="#57606A" class="label-txt">LOW-FI WIREFRAME • CARD ABERTO (LIGHT) • 930 x 510 PX</text>
+
+  <!-- MASTER CARD CONTAINER DIV (930 x 510) -->
+  <g id="CardContainer_Aberto_Light">
+    <rect x="50" y="48" width="930" height="510" rx="20" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.5" />
+    
+    <!-- 1. PANEL ESQUERDO: HIERARQUIA DE DIVS & BLOCOS MONOCROMÁTICOS (400px: x=50 até x=450) -->
+    <g id="LeftPanel_Blocks">
+      <!-- 1. DIV: Status Badge Pill -->
+      <g id="Div_StatusBadge">
+        <rect x="70" y="66" width="156" height="20" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="82" cy="76" r="3.5" fill="#8C959F" />
+        <rect x="92" y="73" width="118" height="6" rx="3" fill="#D0D7DE" />
+      </g>
+
+      <!-- 2. DIV: Header (Title & Subtitle Skeletons) -->
+      <g id="Div_HeaderTitles">
+        <rect x="70" y="96" width="168" height="18" rx="4" fill="#8C959F" />
+        <rect x="70" y="118" width="260" height="10" rx="3" fill="#D0D7DE" />
+      </g>
+
+      <!-- 3. DIV: Input Search Row -->
+      <g id="Div_InputSearchRow">
+        <rect x="70" y="136" width="264" height="40" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="88" cy="156" r="6" fill="none" stroke="#D0D7DE" stroke-width="2" />
+        <rect x="102" y="151" width="90" height="10" rx="3" fill="#8C959F" />
+
+        <rect x="342" y="136" width="88" height="40" rx="10" fill="#24292F" />
+        <rect x="362" y="151" width="48" height="10" rx="3" fill="#FFFFFF" />
+      </g>
+
+      <!-- 4. DIV: 4 Quick Chips Row -->
+      <g id="Div_ChipsRow">
+        <rect x="70" y="186" width="84" height="24" rx="6" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="78" y="194" width="68" height="8" rx="2" fill="#D0D7DE" />
+
+        <rect x="160" y="186" width="84" height="24" rx="6" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="168" y="194" width="68" height="8" rx="2" fill="#D0D7DE" />
+
+        <rect x="250" y="186" width="86" height="24" rx="6" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="258" y="194" width="70" height="8" rx="2" fill="#D0D7DE" />
+
+        <rect x="342" y="186" width="88" height="24" rx="6" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="350" y="194" width="72" height="8" rx="2" fill="#D0D7DE" />
+      </g>
+
+      <!-- 5. DIV: Radar Console Instrument (84px - BARRA ESCURA CONFORME SOLICITADO NO PRINT) -->
+      <g id="Div_RadarConsole">
+        <rect x="70" y="220" width="360" height="84" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1" />
+        
+        <!-- Telemetria Esquerda (Tema Escuro Tático) -->
+        <rect x="84" y="233" width="58" height="7" rx="2" fill="#21262D" />
+        <rect x="84" y="244" width="68" height="10" rx="3" fill="#484F58" />
+        <rect x="84" y="262" width="46" height="7" rx="2" fill="#21262D" />
+        <rect x="84" y="273" width="62" height="10" rx="3" fill="#30363D" />
+
+        <!-- Radar Central Monocromático -->
+        <g transform="translate(250, 262)">
+          <circle cx="0" cy="0" r="34" fill="#21262D" stroke="#30363D" stroke-width="1" />
+          <circle cx="0" cy="0" r="20" fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="2 2" />
+          <circle cx="0" cy="0" r="10" fill="none" stroke="#30363D" stroke-width="1" />
+          <line x1="-46" y1="0" x2="46" y2="0" stroke="#30363D" stroke-width="1" />
+          <line x1="0" y1="-34" x2="0" y2="34" stroke="#30363D" stroke-width="1" />
+          <circle cx="0" cy="0" r="3.5" fill="#E6EDF3" />
+        </g>
+
+        <!-- Telemetria Direita (Tema Escuro Tático) -->
+        <rect x="352" y="233" width="62" height="7" rx="2" fill="#21262D" />
+        <rect x="340" y="244" width="74" height="10" rx="3" fill="#30363D" />
+        <rect x="372" y="262" width="42" height="7" rx="2" fill="#21262D" />
+        <rect x="328" y="273" width="86" height="10" rx="3" fill="#484F58" />
+      </g>
+
+      <!-- 6. DIV: Address Results Section (176px - Preenche a altura uniformemente sem sobra) -->
+      <g id="Div_AddressResults">
+        <rect x="70" y="314" width="360" height="176" rx="14" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="84" y="328" width="112" height="16" rx="3" fill="#8C959F" />
+        <rect x="362" y="326" width="54" height="18" rx="6" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="372" y="332" width="34" height="6" rx="2" fill="#D0D7DE" />
+
+        <!-- Caixa Rua (Mais Encorpada) -->
+        <rect x="84" y="354" width="332" height="52" rx="9" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="96" y="364" width="88" height="7" rx="2" fill="#E1E4E8" />
+        <rect x="96" y="379" width="190" height="14" rx="3" fill="#8C959F" />
+
+        <!-- Caixas Bairro e Código Postal (Mais Encorpadas) -->
+        <rect x="84" y="416" width="162" height="60" rx="9" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="96" y="426" width="54" height="7" rx="2" fill="#E1E4E8" />
+        <rect x="96" y="442" width="96" height="14" rx="3" fill="#8C959F" />
+
+        <rect x="254" y="416" width="162" height="60" rx="9" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="266" y="426" width="76" height="7" rx="2" fill="#E1E4E8" />
+        <rect x="266" y="442" width="88" height="14" rx="3" fill="#D0D7DE" />
+      </g>
+
+      <!-- 7. DIV: Action Button Bottom ("Copiar Endereço" - 40px rente à base com 20px de respiro) -->
+      <g id="Div_ActionButtonBottom">
+        <rect x="70" y="498" width="360" height="40" rx="10" fill="#F6F8FA" stroke="#D0D7DE" stroke-width="1" />
+        <rect x="182" y="511" width="12" height="14" rx="2" fill="none" stroke="#D0D7DE" stroke-width="1.5" />
+        <rect x="204" y="513" width="94" height="10" rx="3" fill="#8C959F" />
+      </g>
+    </g>
+
+    <!-- 2. VERTICAL DIVIDER -->
+    <line x1="450" y1="48" x2="450" y2="558" stroke="#E1E4E8" stroke-width="1" />
+
+    <!-- 3. RIGHT PANEL DIV: MAP CONTAINER (530px: x=450 até x=980) -->
+    <g id="RightPanel_MapPlaceholder">
+      <!-- Fundo do Mapa Placeholder -->
+      <rect x="450" y="48" width="530" height="510" fill="#F6F8FA" />
+
+      <!-- Grid de Ruas e Quarteirões -->
+      <g id="Map_Grid_Skeletons" stroke="#E1E4E8" stroke-width="1">
+        <line x1="450" y1="120" x2="980" y2="120" stroke-dasharray="6 6" />
+        <line x1="450" y1="200" x2="980" y2="200" stroke-dasharray="6 6" />
+        <line x1="450" y1="280" x2="980" y2="280" stroke-dasharray="6 6" />
+        <line x1="450" y1="360" x2="980" y2="360" stroke-dasharray="6 6" />
+        <line x1="450" y1="440" x2="980" y2="440" stroke-dasharray="6 6" />
+
+        <line x1="540" y1="48" x2="540" y2="558" stroke-dasharray="6 6" />
+        <line x1="630" y1="48" x2="630" y2="558" stroke-dasharray="6 6" />
+        <line x1="720" y1="48" x2="720" y2="558" stroke-dasharray="6 6" />
+        <line x1="810" y1="48" x2="810" y2="558" stroke-dasharray="6 6" />
+        <line x1="900" y1="48" x2="900" y2="558" stroke-dasharray="6 6" />
+      </g>
+
+      <!-- Pin Target Marker Placeholder (at x=715, y=303) -->
+      <g id="Div_MapPinTarget" transform="translate(715, 303)">
+        <circle cx="0" cy="0" r="42" fill="rgba(36, 41, 47, 0.12)" />
+        <circle cx="0" cy="0" r="26" fill="none" stroke="#24292F" stroke-width="1" stroke-dasharray="3 3" opacity="0.4" />
+        <circle cx="0" cy="0" r="7" fill="#24292F" />
+
+        <!-- Tooltip Card Box -->
+        <g transform="translate(0, -38)">
+          <rect x="-60" y="-14" width="120" height="28" rx="8" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+          <rect x="-44" y="-4" width="76" height="8" rx="3" fill="#8C959F" />
+          <circle cx="44" cy="0" r="3.5" fill="#D0D7DE" />
+        </g>
+      </g>
+
+      <!-- Botão "Fechar Mapa" Div -->
+      <g id="Div_ButtonCloseMap">
+        <rect x="866" y="64" width="98" height="28" rx="8" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <line x1="878" y1="74" x2="886" y2="82" stroke="#57606A" stroke-width="1.5" stroke-linecap="round" />
+        <line x1="886" y1="74" x2="878" y2="82" stroke="#57606A" stroke-width="1.5" stroke-linecap="round" />
+        <rect x="894" y="75" width="58" height="7" rx="2" fill="#57606A" />
+      </g>
+
+      <!-- Controles de Zoom (+ / -) Div -->
+      <g id="Div_ZoomControls">
+        <rect x="930" y="478" width="34" height="62" rx="8" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+        <line x1="940" y1="493" x2="954" y2="493" stroke="#57606A" stroke-width="1.5" />
+        <line x1="947" y1="486" x2="947" y2="500" stroke="#57606A" stroke-width="1.5" />
+        <line x1="934" y1="509" x2="960" y2="509" stroke="#E1E4E8" stroke-width="1" />
+        <line x1="940" y1="525" x2="954" y2="525" stroke="#57606A" stroke-width="1.5" />
+      </g>
+    </g>
+  </g>
+</svg>

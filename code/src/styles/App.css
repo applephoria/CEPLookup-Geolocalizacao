@@ -1,0 +1,162 @@
+/* ========================================================================= */
+/* BOTÃO DE TEMA FLUTUANTE (Fixo e discreto no topo)                         */
+/* ========================================================================= */
+.theme-toggle-btn {
+  position: fixed;
+  top: 14px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card-surface);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: transform 140ms var(--ease-snappy), background 300ms ease;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--input-bg);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.97);
+}
+
+/* ========================================================================= */
+/* 2. CARD CENTRAL COMPACTO & PROPORCIONAL                                   */
+/* ========================================================================= */
+.app-container {
+  position: relative;
+  z-index: 10;
+  width: 350px;
+  height: 440px; /* Mais compacto e elegante */
+  background: var(--card-surface);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  overflow: hidden;
+  transition: width 480ms var(--ease-drawer), box-shadow 300ms var(--ease-snappy), background 300ms ease;
+}
+
+.app-container.is-expanded {
+  width: 800px;
+  max-width: 94vw;
+}
+
+/* ALA ESQUERDA: ESPAÇAMENTO UNIFORME E DIRETO */
+.left-panel {
+  width: 350px;
+  min-width: 350px;
+  height: 100%;
+  background: var(--card-surface);
+  border-right: 1px solid transparent;
+  padding: 13px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 7px;
+  transition: border-color 400ms var(--ease-snappy), background 300ms ease;
+  overflow: hidden;
+}
+
+.app-container.is-expanded .left-panel {
+  border-right-color: var(--card-border);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  background: var(--input-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  width: fit-content;
+}
+
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 8px var(--accent-green);
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.header-title {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.3px;
+  margin-top: -2px;
+}
+
+.header-subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.35;
+  margin-top: -6px;
+}
+
+/* ALA DIREITA: O MAPA QUE APARECE SUAVEMENTE (TELA 2) */
+.right-panel {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background: #f8fafc;
+  opacity: 0;
+  transform: translateX(30px);
+  pointer-events: none;
+  transition: opacity 380ms var(--ease-snappy) 100ms, transform 480ms var(--ease-drawer);
+}
+
+.app-container.is-expanded .right-panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.btn-collapse-map {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background 140ms var(--ease-snappy), transform 140ms ease;
+}
+
+.btn-collapse-map:hover {
+  background: #f1f5f9;
+}
+
+.btn-collapse-map:active {
+  transform: scale(0.97);
+}

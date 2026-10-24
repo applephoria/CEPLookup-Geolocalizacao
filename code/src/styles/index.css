@@ -1,0 +1,68 @@
+/* ========================================================================= */
+/* 1. PSICOLOGIA DAS CORES & TOKENS DE DESIGN (DARK & CLEAR MODE)            */
+/* ========================================================================= */
+:root {
+  /* MODO DARK: Material Design 3 Surface Tonal Contrast */
+  --bg-canvas: #0B0E14;
+  --card-surface: #141A24;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(255, 255, 255, 0.35);
+  --text-main: #F8FAFC;
+  --text-muted: #8E96A4;
+  --text-faint: #59657A;
+  --input-bg: rgba(255, 255, 255, 0.04);
+  --btn-search-bg: #F8FAFC;
+  --btn-search-text: #0F172A;
+  --accent-green: #22C55E;
+  --accent-green-glow: rgba(34, 197, 94, 0.35);
+  --radar-bg: #0D121B;
+  --radar-grid: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 28px 64px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --map-bg: #F8FAFC;
+  --map-filter: none; /* MAPA SEMPRE EM MODO CLARO INDEPENDENTE DE QUALQUER COISA */
+  --ease-snappy: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+[data-theme="clear"] {
+  /* MODO CLEAR: Claridade Solar, Transparência e Leitura Confortável */
+  --bg-canvas: #EEF2F6;
+  --card-surface: #FFFFFF;
+  --card-border: rgba(15, 23, 42, 0.08);
+  --border-focus: rgba(15, 23, 42, 0.45);
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --text-faint: #94A3B8;
+  --input-bg: #F8FAFC;
+  --btn-search-bg: #0F172A;
+  --btn-search-text: #FFFFFF;
+  --accent-green: #059669;
+  --accent-green-glow: rgba(5, 150, 105, 0.25);
+  --radar-bg: #F8FAFC;
+  --radar-grid: rgba(15, 23, 42, 0.08);
+  --card-shadow: 0 24px 56px -12px rgba(15, 23, 42, 0.09), 0 0 0 1px rgba(15, 23, 42, 0.04);
+  --map-bg: #F8FAFC;
+  --map-filter: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* VIEWPORT LOCK TOTAL */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-canvas);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 400ms var(--ease-snappy);
+}

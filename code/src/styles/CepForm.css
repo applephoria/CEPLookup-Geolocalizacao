@@ -1,0 +1,115 @@
+.cep-search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-faint);
+  pointer-events: none;
+  display: flex;
+}
+
+.cep-input {
+  width: 100%;
+  height: 36px;
+  background: var(--input-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 9px;
+  padding: 0 12px 0 34px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  outline: none;
+  transition: border-color 160ms var(--ease-snappy), background 160ms var(--ease-snappy);
+}
+
+.cep-input:focus {
+  border-color: var(--border-focus);
+}
+
+.btn-search {
+  height: 36px;
+  padding: 0 14px;
+  background: var(--btn-search-bg);
+  color: var(--btn-search-text);
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 12.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: transform 140ms var(--ease-snappy), opacity 140ms ease;
+  white-space: nowrap;
+}
+
+.btn-search:active {
+  transform: scale(0.97);
+}
+
+.btn-search:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 500ms linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.quick-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+}
+
+.chip {
+  background: var(--input-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: transform 120ms var(--ease-snappy), color 120ms ease;
+}
+
+.chip:hover {
+  color: var(--text-main);
+}
+
+.chip:active {
+  transform: scale(0.95);
+}
